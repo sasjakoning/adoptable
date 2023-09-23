@@ -26,5 +26,5 @@
 </script>
 
 <style scoped lang="scss">
-@import "nav";
+@import "navbar";
 </style>

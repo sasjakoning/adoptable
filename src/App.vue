@@ -1,6 +1,9 @@
 <template>
 
-  <Header></Header>
+  <header>
+    <Navbar/>
+    <LandingHeader/>
+  </header>
 
   <main>
     <section>
@@ -269,5 +272,6 @@
 
 
 <script setup>
-import Header from './components/Header/Header.vue';
+import Navbar from './components/Navbar/Navbar.vue';
+import LandingHeader from './components/LandingHeader/LandingHeader.vue';
 </script>

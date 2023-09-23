@@ -1,6 +1,5 @@
 <template>
-  <header>
-    <Nav />
+  <section class="landing__container">
     <div>
       <h1>Adoptable</h1>
       <h2>Uw adoptie huisdier met een duurzame "paw" print.</h2>
@@ -19,13 +18,13 @@
       >
     </figure>
     <button>chevron down</button>
-  </header>
+  </section>
 </template>
 
 <script setup>
-import Nav from '../Nav/Nav.vue'
+
 </script>
 
 <style scoped lang="scss">
-@import "header";
+@import "landing-header.scss";
 </style>
