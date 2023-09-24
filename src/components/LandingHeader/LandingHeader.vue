@@ -5,14 +5,14 @@
       <h2>Uw adoptie huisdier met een duurzame "paw" print.</h2>
       <a href="#">Bekijk onze dieren</a>
     </div>
-    <figure class="header__media">
+    <figure class="landing__media">
       <img
-          class="header__media__dog-body"
+          class="landing__media__dog-body"
           src="@/assets/dog/dog-header/dog-body.png"
           alt=""
       >
       <img
-          class="header__media__dog-head"
+          class="landing__media__dog-head"
           src="@/assets/dog/dog-header/dog-tail.png"
           alt=""
       >

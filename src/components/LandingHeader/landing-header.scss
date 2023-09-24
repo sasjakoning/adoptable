@@ -1,3 +1,13 @@
 .landing__container {
     width: 100%;
+
+    .landing__media {
+        width: 10rem;
+        background: red;
+        position: relative;
+
+        img {
+            position: absolute;
+        }
+    }
 }
