@@ -1,9 +1,8 @@
 <template>
   <section class="landing__container">
-    <div>
+    <div class="landing__content">
       <h1>Adoptable</h1>
       <h2>Uw adoptie huisdier met een duurzame "paw" print.</h2>
-      <a href="#">Bekijk onze dieren</a>
     </div>
     <figure class="landing__media">
       <img
@@ -12,12 +11,18 @@
           alt=""
       >
       <img
-          class="landing__media__dog-head"
+          class="landing__media__dog-tail"
           src="@/assets/dog/dog-header/dog-tail.png"
           alt=""
       >
     </figure>
-    <button>chevron down</button>
+    <div class="landing__cta">
+      <a 
+      class="button"
+      href="#"
+      >Bekijk onze dieren</a>
+      <button aria-label="down arrow" class="chevron-down"></button>
+    </div>
   </section>
 </template>
 

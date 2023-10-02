@@ -1,13 +1,50 @@
 .landing__container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40rem;
+    background: var(--primary);
+    padding: 5rem 1rem 0 1rem;
+    color: var(--light);
+    container: landing-container / inline-size;
+
+    .landing__content {
+        position: relative;
+        width: 100%;
+        
+        h1 {
+            font-size: 24cqw;
+            line-height: normal;
+            position: absolute;
+        }
+        
+        h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            width: 46cqw;
+            padding-top: 28cqw;
+        }
+    }
 
     .landing__media {
-        width: 10rem;
-        background: red;
+        width: 20rem;
+        aspect-ratio: 1/1;
         position: relative;
 
         img {
             position: absolute;
+        }
+
+        .landing__media__dog-body {
+            z-index: 1;
+        }
+
+        .landing__media__dog-tail {
+            width: 5rem;
+            height: 8rem;
+            top: 0;
+            right: 0;
         }
     }
 }

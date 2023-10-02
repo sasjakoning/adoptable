@@ -4,3 +4,31 @@ main {
   width: clamp(320px, 100%, 50rem);
   margin: auto;
 }
+
+.button {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--accent, #0FDBB8);
+  color: var(--primary);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 700;
+
+  &:hover {
+    background: var(--accent-2, #097C68);
+  }
+}
+
+.chevron-down {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 1.5rem;
+  height: 1rem;
+  background: url(../assets/etc/chevron-down.svg) no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+}
