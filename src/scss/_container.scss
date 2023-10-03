@@ -1,0 +1,12 @@
+$desktop-container: '[data-device="desktop"]';
+
+@mixin container($name, $min-width) {
+    $container-sizes: ('s': 320, 'm': 480, 'l': 640, 'xl': 800, 'xxl': 1000);
+    $size: map-get($container-sizes, $min-width);
+
+    #{$desktop-container} & {
+        @container #{$name} (min-width: #{$size}px) {
+            @content;
+        }
+    }
+}
