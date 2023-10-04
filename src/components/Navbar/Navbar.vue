@@ -1,6 +1,7 @@
 <template>
-  <nav>
-    <ul>
+  <nav class="nav">
+    <button aria-label="menu toggle" class="nav__menu"></button>
+    <ul class="nav__content">
       <li>
         <a href="#">Logo</a>
       </li>
