@@ -1,6 +1,13 @@
 <template>
   <nav class="nav">
-    <button aria-label="menu toggle" class="nav__menu"></button>
+    <div class="nav__wrapper">
+      <h1>Adoptable</h1>
+      <button 
+      @click="toggleMenu"
+      aria-label="menu toggle" 
+      class="nav__menu"
+      ></button>
+    </div>
     <ul class="nav__content">
       <li>
         <a href="#">Logo</a>
@@ -23,7 +30,20 @@
     </ul>
   </nav>
 </template>
-<script setup>
+
+<script>
+
+export default {
+  data() {
+  },
+
+  methods: {
+    toggleMenu() {
+      const nav = document.querySelector('.nav__content');
+      nav.classList.toggle('nav__content--active');
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
