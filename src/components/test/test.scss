@@ -1,28 +1,31 @@
-@use '../../scss/default' as *;
+.list {
+    display: inline-flex;
+    padding: 1.5rem 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 2rem 1.5rem;
+    flex-wrap: wrap;
 
-.test {
-    max-width: 50rem;
-    height: 20rem;
-    background-color: green;
-    container: test / size;
-
-    .test-child {
-        width: 50cqw;
-        height: 100cqh;
-        background-color: red;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 
-    @include container(test, 'm') {
-        .test-child {
-            background-color: blue;
-        }
-    
+    &__image {
+        width: 10rem;
+        height: 10rem;
+        background: #D9D9D9;
+    }
+
+    &__text {
+        color: #000;
+        font-family: Inter;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
-
-
-// @container test (min-width: 20rem) {
-//     .test-child {
-//         background-color: blue;
-//     }
-// }

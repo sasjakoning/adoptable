@@ -1,21 +1,26 @@
 <template>
-  <div 
+  <!-- <div 
   :data-device="deviceType"
   class="wrapper"
   >
   <Navbar />
-  </div>
+  </div> -->
+<div class="wrapper">
+  <Test />
+</div>
 </template>
 
 
 <script>
 import Navbar from './components/Navbar/Navbar.vue';
 import LandingHeader from './components/LandingHeader/LandingHeader.vue';
+import Test from './components/test/test.vue';
 
 export default {
   components: {
     Navbar,
     LandingHeader,
+    Test
   },
 
   data() {
@@ -44,3 +49,16 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.wrapper {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.5rem;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+}
+</style>
